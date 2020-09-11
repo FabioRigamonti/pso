@@ -229,7 +229,7 @@ if __name__ == "__main__":
 
     fig.show()
 
-    
+    plt.savefig('./iter.png')
 
     Mb_fit = pos[0]
     Rb_fit = pos[1]
