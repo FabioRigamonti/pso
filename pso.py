@@ -79,7 +79,7 @@ if __name__ == "__main__":
     options = {'c1': 1.5, 'c2': 1.5, 'w':0.73}
     optimizer = ps.single.GlobalBestPSO(n_particles=n_particles, dimensions=10, options=options,bounds=bounds) 
     #cost, pos = optimizer.optimize(likelihood_pso_smoothing, iters=n_iter,x=x_rand,y=y_rand,ydata=ydata,yerr=yerr,psf_weight=psf_weight,smoothing=smoothing,n_processes=4)  
-    cost, pos = optimizer.optimize(likelihood_pso_no_sigma_smooth, iters=n_iter,x=x_rand,y=y_rand,ydata=ydata,yerr=yerr,psf_weight=psf_weight,smoothing=smoothing,n_processes=4)  
+    cost, pos = optimizer.optimize(likelihood_pso_no_sigma_smooth, iters=n_iter,x=x_rand,y=y_rand,ydata=ydata,yerr=yerr,psf_weight=psf_weight,smoothing=smoothing,n_processes=1)  
 
     #options = {'c1': 0.8, 'c2': 2, 'w':0.4}
     #pos_i = np.array([pos for i in range(10)])
