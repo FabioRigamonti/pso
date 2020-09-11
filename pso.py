@@ -21,7 +21,7 @@ def PSF(r,            #raggio proiettato
 
 if __name__ == "__main__":
     
-    x, y,rho,v_los,sigma_los, error_rho,error_v_los,error_sigma_los,smoothing = np.loadtxt('../data_constant_error_smoothing.txt',usecols=(0,1,2,3,4,5,6,7,8),unpack = True)
+    x, y,rho,v_los,sigma_los, error_rho,error_v_los,error_sigma_los,smoothing = np.loadtxt('data_constant_error_smoothing_corretto.txt',usecols=(0,1,2,3,4,5,6,7,8),unpack = True)
 
 
     J = np.size(x[ x == x[0] ])
